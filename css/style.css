@@ -152,7 +152,7 @@ footer {
 
 .crows { display: flex; justify-content: center; gap: 28px; font-size: 64px; }
 .crows .gone { opacity: .08; }
-.motto { margin-top: 24px; font-size: clamp(16px, 4.5vw, 22px); letter-spacing: .2em; text-transform: uppercase; }
+.motto { margin-top: 24px; font-size: clamp(14px, 4vw, 22px); letter-spacing: .2em; text-transform: uppercase; }
 .motto .blank { color: var(--red); }
 
 
@@ -374,8 +374,9 @@ body.spooky .win h1 { font-family: 'Creepster', cursive; letter-spacing: .06em; 
   display: inline-block;
   text-align: left;
   font-family: 'Cinzel', serif;
-  font-size: clamp(16px, 4.5vw, 22px);
+  font-size: clamp(14px, 4vw, 22px);
   line-height: 2;
+  white-space: nowrap;
   color: var(--fg);
 }
 
