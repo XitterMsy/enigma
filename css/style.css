@@ -482,3 +482,36 @@ body.spooky .win h1 { font-family: 'Creepster', cursive; letter-spacing: .06em; 
 }
 .vhs-reels { display: flex; justify-content: center; gap: 70px; margin-top: 16px; }
 .vhs-reels span { width: 54px; height: 54px; border-radius: 50%; border: 8px solid #2b2b2b; background: #070707; }
+
+
+.padlock { display: inline-flex; flex-direction: column; align-items: center; gap: 18px; }
+.padlock-icon { font-size: 96px; color: #b8a27a; transition: color .3s; }
+.padlock.open .padlock-icon { color: var(--red); }
+.padlock-dials { display: flex; gap: 10px; }
+.padlock-dials input {
+  width: 64px;
+  height: 64px;
+  border: 2px solid #3a2a45;
+  border-radius: 10px;
+  background: #120d16;
+  color: var(--fg);
+  font-family: 'Space Mono', monospace;
+  font-size: 26px;
+  text-align: center;
+}
+.padlock-dials input:focus { outline: none; border-color: var(--red); }
+.padlock-btn {
+  padding: 10px 32px;
+  border: 1px solid var(--red);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--red);
+  font-family: 'Space Mono', monospace;
+  font-size: 15px;
+  cursor: pointer;
+}
+.padlock-btn:hover { background: var(--red); color: #07050a; }
+.padlock-msg { min-height: 1.5em; color: var(--muted); }
+.padlock.open .padlock-msg { color: var(--fg); font-size: 18px; }
+.shake { animation: shake .4s; }
+@keyframes shake { 20%, 60% { transform: translateX(-8px); } 40%, 80% { transform: translateX(8px); } }

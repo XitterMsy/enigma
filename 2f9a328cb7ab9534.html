@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>memória do medo</title>
+<title>o cadeado</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Cinzel:wght@700&family=Creepster&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -14,17 +14,20 @@
 <header><span class="brand"><i class="fa-solid fa-crow"></i>Enigma Masayoshi · Halloween</span><span>Fase 13 ☠</span></header>
 <main>
 <div class="stage">
-<div class="memory">
-  <div><i class="fa-solid fa-calendar-day"></i><span>1</span></div>
-  <div><i class="fa-solid fa-tv"></i><span>1</span></div>
-  <div><i class="fa-solid fa-lightbulb"></i><span>3</span></div>
-  <div><i class="fa-solid fa-child"></i><span>2</span></div>
-  <div><i class="fa-solid fa-sailboat"></i><span>1</span></div>
-  <div><i class="fa-solid fa-person-dress"></i><span>1</span></div>
+<div class="padlock" id="padlock" data-cipher="5c42540b520d4554425d5e40595611f2841140425543545b584548594554">
+  <i class="fa-solid fa-lock padlock-icon"></i>
+  <div class="padlock-dials">
+    <input inputmode="numeric" maxlength="2" aria-label="primeiro número">
+    <input inputmode="numeric" maxlength="2" aria-label="segundo número">
+    <input inputmode="numeric" maxlength="2" aria-label="terceiro número">
+  </div>
+  <button class="padlock-btn" type="button">abrir</button>
+  <p class="padlock-msg" aria-live="polite"></p>
 </div>
 </div>
-<p class="text">Você já enfrentou todos eles.<br>Agora junte o que sobrou.</p>
+<p class="text">Três números cruzaram o seu caminho.<br>Coloque-os na ordem em que apareceram.</p>
 </main>
 <footer>masayoshi company · 2026</footer>
+<script src="js/padlock.js"></script>
 </body>
 </html>
