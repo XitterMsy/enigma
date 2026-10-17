@@ -407,3 +407,88 @@ body.spooky .win h1 { font-family: 'Creepster', cursive; letter-spacing: .06em; 
   font-family: 'Space Mono', monospace;
   font-size: 14px;
 }
+
+
+.toybox {
+  width: min(240px, 100%);
+  margin: 0 auto;
+  border: 8px solid #c4161c;
+  border-radius: 10px;
+  background: #1d4fa3;
+  padding: 12px;
+  font-family: system-ui, sans-serif;
+}
+.toybox-brand { font-weight: 900; font-size: 24px; color: #ffd23b; letter-spacing: .08em; text-shadow: 2px 2px 0 #c4161c; }
+.toybox-window {
+  margin: 10px 0;
+  height: 170px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(255,255,255,.25), rgba(255,255,255,.05));
+  display: grid;
+  place-items: center;
+  font-size: 96px;
+  color: #ff7a3b;
+}
+.toybox-bubble { font-size: 15px; color: #fff; font-weight: 600; }
+
+
+.sweater {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 16px;
+  background: repeating-linear-gradient(0deg, #8b1a1a 0 22px, #2f5a2a 22px 44px);
+  display: grid;
+  place-items: center;
+  font-size: 90px;
+  color: #b8a27a;
+}
+
+
+.tv-screen.static {
+  background:
+    repeating-radial-gradient(circle at 17% 32%, #fff 0 1px, #000 1px 2px),
+    repeating-radial-gradient(circle at 73% 61%, #888 0 1px, transparent 1px 3px);
+  background-size: 120% 120%, 140% 140%;
+  animation: snow .12s steps(4) infinite;
+}
+@keyframes snow {
+  25% { background-position: 10% 20%, 30% 5%; }
+  50% { background-position: 40% 70%, 5% 50%; }
+  75% { background-position: 80% 10%, 60% 90%; }
+}
+
+
+.emoji-rebus { display: flex; justify-content: center; gap: clamp(16px, 5vw, 40px); }
+.emoji-rebus img { width: clamp(64px, 20vw, 110px); height: auto; }
+
+
+.vhs {
+  width: min(340px, 100%);
+  margin: 0 auto;
+  padding: 18px;
+  border-radius: 6px;
+  background: #151515;
+  box-shadow: 0 20px 40px rgba(0,0,0,.7);
+}
+.vhs-label {
+  padding: 14px 10px;
+  background: #f1ece0;
+  color: #1a1a1a;
+  font-family: 'Courier New', monospace;
+  font-size: clamp(16px, 5vw, 22px);
+  font-weight: 700;
+  transform: rotate(-1deg);
+}
+.vhs-reels { display: flex; justify-content: center; gap: 70px; margin-top: 16px; }
+.vhs-reels span { width: 54px; height: 54px; border-radius: 50%; border: 8px solid #2b2b2b; background: #070707; }
+
+
+.stripes {
+  width: 200px;
+  height: 240px;
+  margin: 0 auto;
+  border-radius: 14px 14px 4px 4px;
+  background: repeating-linear-gradient(90deg, #f2f0ea 0 18px, #111 18px 36px);
+  box-shadow: 0 0 40px rgba(110, 200, 90, .25);
+}
