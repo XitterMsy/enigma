@@ -364,3 +364,45 @@ body.spooky .win h1 { font-family: 'Creepster', cursive; letter-spacing: .06em; 
   line-height: 1.5;
 }
 .case-plaque small { font-family: 'Space Mono', monospace; font-size: 11px; opacity: .8; }
+
+
+.hidden-ink { color: transparent; margin-top: 8px; }
+.hidden-ink::selection { color: #fff; background: var(--red); }
+
+
+.poem {
+  display: inline-block;
+  text-align: left;
+  font-family: 'Cinzel', serif;
+  font-size: clamp(16px, 4.5vw, 22px);
+  line-height: 2;
+  color: var(--fg);
+}
+
+
+.memory { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+.memory div {
+  width: 80px;
+  padding: 18px 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 30px;
+}
+.memory span { font-size: 14px; color: var(--red); }
+
+
+.swatches { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+.swatch {
+  width: 110px;
+  height: 110px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+}
