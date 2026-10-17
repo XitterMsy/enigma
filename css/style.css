@@ -515,3 +515,6 @@ body.spooky .win h1 { font-family: 'Creepster', cursive; letter-spacing: .06em; 
 .padlock.open .padlock-msg { color: var(--fg); font-size: 18px; }
 .shake { animation: shake .4s; }
 @keyframes shake { 20%, 60% { transform: translateX(-8px); } 40%, 80% { transform: translateX(8px); } }
+.padlock-dials label { display: flex; flex-direction: column; align-items: center; gap: 6px; color: var(--muted); }
+.padlock-dials label i { font-size: 20px; color: #b8a27a; }
+.padlock-dials label span { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; }
